@@ -1,16 +1,12 @@
 ```lua
-local html = require("html")
+local html = require("teil")
 
 local rendered = html {
   html.div {
     "foo",
-    html.a { href = "/index.html" } {
-      "Link!"
-    }
+    html.a { href = "/index.html" } "Link!"
   },
-  html.div { class = "box", id = "box1" } {
-    "Another one"
-  }
+  html.div { class = "box", id = "box1" } "Another one"
 }
 ```
 
